@@ -1,0 +1,13 @@
+@charset "UTF-8";
+#wrap {width:1200px; margin:0 auto; height:1000px;}
+header {height:100px;}
+.menu {height:40px; background-color: #ddd;}
+.banner {height:400px;}
+.contents {height:420px;}
+footer {height:120px;}
+
+.top-menu .nav-link {color:#888;}
+.top-menu .nav-link:hover {color:#000;}
+
+.menu .nav-link {color:#000;}
+.menu .nav-link:hover {color:#888;}
