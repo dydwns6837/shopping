@@ -18,14 +18,16 @@ public class UserBO {
 		return userRepository.findByLoginId(loginId);
 	}
 	
-	// input: 파라미터 4개
+	// input: 파라미터 6개
 	// output: Integer(user pk)
-	public Integer addUser(String loginId, String password, String name, String email) {
+	public Integer addUser(String loginId, String password, String name, String email, String address, String phoneNumber) {
 		UserEntity user = userRepository.save(UserEntity.builder()
 								.loginId(loginId)
 								.password(password)
 								.name(name)
 								.email(email)
+								.address(address)
+								.phoneNumber(phoneNumber)
 								.build());
 		
 		return user == null ? null : user.getId();

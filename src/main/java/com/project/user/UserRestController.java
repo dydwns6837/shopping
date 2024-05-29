@@ -53,6 +53,8 @@ public class UserRestController {
 	 * @param password
 	 * @param name
 	 * @param email
+	 * @param address
+	 * @param phoneNumber
 	 * @return
 	 */
 	@PostMapping("/sign-up")
@@ -60,7 +62,9 @@ public class UserRestController {
 			@RequestParam("loginId") String loginId,
 			@RequestParam("password") String password,
 			@RequestParam("name") String name,
-			@RequestParam("email") String email) {
+			@RequestParam("email") String email,
+			@RequestParam("address") String address,
+			@RequestParam("phoneNumber") String phoneNumber) {
 		
 		// md5 알고리즘
 		// 암호 hashing(복호화 X)
@@ -69,7 +73,7 @@ public class UserRestController {
 		String hashedPassword = EncryptUtils.md5(password);
 		
 		// insert db
-		Integer userId = userBO.addUser(loginId, hashedPassword, name, email);
+		Integer userId = userBO.addUser(loginId, hashedPassword, name, email, address, phoneNumber);
 		
 		// 응답값
 		Map<String, Object> result = new HashMap<>();

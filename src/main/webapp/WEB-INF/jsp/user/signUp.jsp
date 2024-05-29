@@ -50,6 +50,16 @@
 				<td><input type="text" id="email" name="email"
 					class="form-control" placeholder="이메일 주소를 입력하세요."></td>
 			</tr>
+			<tr>
+				<th>* 주소</th>
+				<td><input type="text" id="address" name="address"
+					class="form-control" placeholder="주소를 입력하세요."></td>
+			</tr>
+			<tr>
+				<th>* 핸드폰 번호</th>
+				<td><input type="text" id="phoneNumber" name="phoneNumber"
+					class="form-control" placeholder="번호를 입력하세요. ex)01012341234"></td>
+			</tr>
 		</table>
 		<br>
 
@@ -104,6 +114,8 @@
 			let confirmPassword = $("#confirmPassword").val();
 			let name = $("#name").val().trim();
 			let email = $("#email").val().trim();
+			let address = $("#address").val().trim();
+			let phoneNumber = $("#phoneNumber").val().trim();
 			
 			if (!loginId) {
 				alert("아이디를 입력하세요");
@@ -127,6 +139,16 @@
 			
 			if (!email) {
 				alert("이메일을 입력하세요.");
+				return false;
+			}
+			
+			if (!address) {
+				alert("주소를 입력하세요.");
+				return false;
+			}
+			
+			if (!phoneNumber) {
+				alert("핸드폰 번호를 입력하세요.");
 				return false;
 			}
 			

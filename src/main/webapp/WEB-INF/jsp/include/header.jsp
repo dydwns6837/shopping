@@ -4,7 +4,7 @@
 <div class="h-100 mx-4 d-flex justify-content-between align-items-center">
 	<%-- logo --%>
 	<div>
-		<h1 class="font-weight-bold">강남스타일</h1>
+		<h1 class="font-weight-bold"><a href="/main-view" class="text-dark">강남스타일</a></h1>
 	</div>
 
 	<%-- login 정보 --%>
