@@ -11,3 +11,7 @@ footer {height:120px;}
 
 .menu .nav-link {color:#000;}
 .menu .nav-link:hover {color:#888;}
+
+.a {
+	text-decoration: none;
+}

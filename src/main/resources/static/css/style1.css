@@ -2,3 +2,7 @@
 header {height:100px;}
 .contents {min-height:500px;}
 footer {height:100px;}
+
+.a {
+	text-decoration: none;
+}

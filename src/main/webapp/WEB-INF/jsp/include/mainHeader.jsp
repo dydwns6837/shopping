@@ -17,7 +17,9 @@
 <!-- 로고 -->
 <div class="col-5 d-flex justify-content-center">
 	<div>
-		<div class="display-4">강남 스타일</div>
+		<div class="display-4">
+			<a href="/main-view" class="text-dark">강남 스타일</a>
+		</div>
 		<div>강한 남자들의 패션몰</div>
 	</div>
 </div>

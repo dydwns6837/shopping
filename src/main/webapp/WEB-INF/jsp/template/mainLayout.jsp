@@ -34,62 +34,15 @@
 			<jsp:include page="../include/mainNav.jsp" />
 		</nav>
 
-		<!-- 배너 영역 -->
-		<section class="banner">
-			<img src="/static/img/banner.jpg" alt="배너이미지">
-		</section>
-
-		<!-- 상품 영역 -->
-		<section class="contents">
-			<h2 class="pt-2">Best Seller</h2>
-
-			<!-- 상품 목록 -->
-			<div class="d-flex justify-content-between">
-				<article>
-					<img src="/static/img/outer1.jpg" alt="아우터1" width="200">
-					<div class="font-weight-bold">블루종(cream)</div>
-					<div class="text-secondary">
-						<del>87,000원</del>
-					</div>
-					<div>80,000원</div>
-				</article>
-				<article>
-					<img src="/static/img/top1.jpg" alt="상의1" width="200">
-					<div class="font-weight-bold">후드티</div>
-					<div class="text-secondary">
-						<del>50,000원</del>
-					</div>
-					<div>45,000원</div>
-				</article>
-				<article>
-					<img src="/static/img/pants1.jpg" alt="하의1" width="200">
-					<div class="font-weight-bold">와이드 데님 팬츠_그레이</div>
-					<div class="text-secondary">
-						<del>50,000원</del>
-					</div>
-					<div>45,000원</div>
-				</article>
-				<article>
-					<img src="/static/img/shoes1.jpg" alt="신발1" width="200">
-					<div class="font-weight-bold">아이보리 스웨이드 슈즈</div>
-					<div class="text-secondary">130,000원</div>
-				</article>
-				<article>
-					<img src="/static/img/acc1.jpg" alt="악세서리1" width="200">
-					<div class="font-weight-bold">팔찌</div>
-					<div class="text-secondary">
-						<del>30,000원</del>
-					</div>
-					<div>25,000원</div>
-				</article>
-			</div>
+		
+		<section>
+			<jsp:include page="../${viewName}.jsp" />
 		</section>
 
 		<!-- footer -->
 		<footer class="d-flex justify-content-center align-items-center">
 			<jsp:include page="../include/mainFooter.jsp" />
 		</footer>
-	</div>
 	</div>
 </body>
 </html>
