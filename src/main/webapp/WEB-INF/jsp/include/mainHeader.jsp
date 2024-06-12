@@ -45,6 +45,6 @@
 			</c:if>
 		</li>
 		<li class="nav-item"><a href="#" class="nav-link text-dark">고객센터</a></li>
-		<li class="nav-item"><a href="#" class="nav-link text-dark">장바구니</a></li>
+		<li class="nav-item"><a href="/user/basket" class="nav-link text-dark">장바구니</a></li>
 	</ul>
 </nav>

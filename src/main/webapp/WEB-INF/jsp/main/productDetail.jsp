@@ -62,7 +62,7 @@
 				</div>
 				<div>
 					<button type="button" class="btn btn-danger col-12 mt-3">
-						<a href="/main-view" class="text-white">돌아가기</a>
+						<a href="/main-view	" class="text-white">돌아가기</a>
 					</button>
 				</div>
 			</div>
@@ -116,7 +116,7 @@
 			}
 			
 			$.ajax({
-				type:"post"
+				type:"get"
 				, url:"/user/add-basket"
 				, data:{"clothName" : "${clothInfo.clothName }"
 						, "clothSize" : chooseSize
@@ -135,7 +135,7 @@
 		});
 	});
 	
-	
+		
 	
 	$(".selectpicker").selectpicker({
 		});
