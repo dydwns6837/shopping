@@ -62,13 +62,13 @@
 				$.ajax({
 					type:"post"
 					, url:"/admin/login"
-					, data:{"loginId":id, "password":pw}
+					, data:{"loginId":id, "loginPw":pw}
 					, success:function(data){
 						console.log(data);
 						
 						if(data.result == "success"){
 							alert("로그인 성공 관리자 페이지로 이동합니다.");
-							location.href="/admin-main-view";
+							location.href="/main-view";
 						} else {
 							alert("아이디 또는 비밀번호를 확인하세요.");
 						}

@@ -31,7 +31,7 @@ public class ManagerController {
 	}
 	
 	@GetMapping("/admin-main-view")
-	public String mainPage(Model model) {
+	public String AdminMainPage(Model model) {
 		model.addAttribute("viewName", "manager/main");
 		
 		return "template/mainLayout";
@@ -47,7 +47,7 @@ public class ManagerController {
 		session.removeAttribute("managerId");
 		session.removeAttribute("managerName");
 
-		return "redirect:/main/home";
+		return "redirect:/main-view";
 	}
 
 	// 매니저가 상품 추가

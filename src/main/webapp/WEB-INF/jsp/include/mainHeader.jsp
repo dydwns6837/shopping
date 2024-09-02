@@ -30,17 +30,23 @@
 			<!-- 로그인시 --> 
 			<c:if test="${not empty userId}">
 				<span class="nav-link text-dark">${userName}님</span>
-			</c:if> 
+			</c:if>
+			<c:if test="${not empty managerId}">
+				<span class="nav-link text-dark">${managerName}님</span>
+			</c:if>
 			<!-- 비로그인시 --> 
-			<c:if test="${empty userId}">
+			<c:if test="${empty userId && empty managerId}">
 				<a href="/user/sign-in-view" class="nav-link text-dark">로그인</a>
 			</c:if>
 		</li>
 		<li class="nav-item">
 			<c:if test="${not empty userId}">
 				<a href="/user/sign-out" class="nav-link text-dark">로그아웃</a>
-			</c:if> 
-			<c:if test="${empty userId}">
+			</c:if>
+			<c:if test="${not empty managerId}">
+				<a href="/admin/logout" class="nav-link text-dark">로그아웃</a>
+			</c:if>
+			<c:if test="${empty userId && empty managerId}">
 				<a href="/user/sign-up-view" class="nav-link text-dark">회원가입</a>
 			</c:if>
 		</li>
@@ -48,6 +54,9 @@
 		<li class="nav-item">
 			<c:if test="${not empty userId}">
 				<a href="/basket/list-view" class="nav-link text-dark">장바구니</a>
+			</c:if>
+			<c:if test="${not empty managerId}">
+				<a href="/admin/add-product" class="nav-link text-dark">재고추가</a>
 			</c:if>
 		</li>	
 	</ul>
