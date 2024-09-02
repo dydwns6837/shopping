@@ -20,7 +20,7 @@
 		<div class="display-4">
 			<a href="/main-view" class="text-dark">강남 스타일</a>
 		</div>
-		<div>강한 남자들의 패션몰</div>
+		<div class="text-center">강한 남자들의 패션몰</div>
 	</div>
 </div>
 <!-- 로그인 -->
@@ -29,7 +29,7 @@
 		<li class="nav-item">
 			<!-- 로그인시 --> 
 			<c:if test="${not empty userId}">
-				<span class="nav-link text-dark">${userName}</span>
+				<span class="nav-link text-dark">${userName}님</span>
 			</c:if> 
 			<!-- 비로그인시 --> 
 			<c:if test="${empty userId}">
@@ -45,6 +45,10 @@
 			</c:if>
 		</li>
 		<li class="nav-item"><a href="#" class="nav-link text-dark">고객센터</a></li>
-		<li class="nav-item"><a href="/user/basket" class="nav-link text-dark">장바구니</a></li>
+		<li class="nav-item">
+			<c:if test="${not empty userId}">
+				<a href="/basket/list-view" class="nav-link text-dark">장바구니</a>
+			</c:if>
+		</li>	
 	</ul>
 </nav>

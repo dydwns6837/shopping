@@ -14,7 +14,9 @@
 <link rel="stylesheet" href="/static/css/style.css" type="text/css">
 </head>
 <body>
-		
+	<header>
+			<jsp:include page="../include/header.jsp" />
+	</header>	
 	<!-- 주문하기 전 장바구니 목록 -->
 	<div>
 		<c:set var="totalPrice" value="0" />

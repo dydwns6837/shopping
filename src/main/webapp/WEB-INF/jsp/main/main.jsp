@@ -8,7 +8,7 @@
 <!-- 배너 영역 -->
 <section>
 	<section class="banner">
-		<img src="/static/img/banner.jpg" alt="배너이미지">
+		<img src="/static/img/banner.jpg" alt="배너이미지" width="1400">
 	</section>
 	
 	<!-- 상품 영역 -->
