@@ -50,13 +50,18 @@
 				<a href="/user/sign-up-view" class="nav-link text-dark">회원가입</a>
 			</c:if>
 		</li>
-		<li class="nav-item"><a href="#" class="nav-link text-dark">고객센터</a></li>
+		<li class="nav-item">
+			<a href="/customer/customerBoard" class="nav-link text-dark">고객센터</a>
+		</li>
 		<li class="nav-item">
 			<c:if test="${not empty userId}">
 				<a href="/basket/list-view" class="nav-link text-dark">장바구니</a>
 			</c:if>
 			<c:if test="${not empty managerId}">
 				<a href="/admin/add-product" class="nav-link text-dark">재고추가</a>
+			</c:if>
+			<c:if test="${empty userId && empty managerId}">
+				<a href="/user/sign-in-view" class="nav-link text-dark">장바구니</a>
 			</c:if>
 		</li>	
 	</ul>

@@ -22,32 +22,32 @@ import lombok.NoArgsConstructor;
 @Table(name="basket")
 @Entity
 public class BasketEntity {
-		
-		@Id
-		@GeneratedValue(strategy=GenerationType.IDENTITY)
-		private int id;
-		
-		@Column(name="userId")
-		private int userId;
-		
-		@Column(name="clothName")
-		private String clothName;
-		
-		@Column(name="clothSize")
-		private String clothSize;
-		
-		@Column(name="clothCount")
-		private int clothCount;
-		
-		@Column(name="clothStatus")
-		private String clothStatus;
-		
-		@UpdateTimestamp
-		@Column(name="createdAt", updatable=false)
-		private Date createdAt;
-		
-		@UpdateTimestamp
-		@Column(name="updatedAt")
-		private Date updatedAt;
-	
+      
+      @Id
+      @GeneratedValue(strategy=GenerationType.IDENTITY)
+      private int id;
+      
+      @Column(name="userId")
+      private int userId;
+      
+      @Column(name="clothName")
+      private String clothName;
+      
+      @Column(name="clothSize")
+      private String clothSize;
+      
+      @Column(name="clothCount")
+      private int clothCount;
+      
+      @Column(name="clothStatus")
+      private String clothStatus;
+      
+      @UpdateTimestamp
+      @Column(name="createdAt", updatable=false)
+      private Date createdAt;
+      
+      @UpdateTimestamp
+      @Column(name="updatedAt")
+      private Date updatedAt;
+   
 }
